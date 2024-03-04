@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<p>Tombol Hide & Show</p>
+
+<button id = "show">Show</button>
+
+<button id = "hide">Hide</button>
+
+<script>
+<!-- block jquery -->
+$(document).ready(function(){
+// ketika elemen id di click
+    $("#show").click(function(){
+        $("p").show()
+            // alert("oke")
+    })
+
+    $("#hide").click(function(){
+        $("p").hide()
+            // alert("oke")
+    })
+})
+</script>
+
+</body>
+</html>
