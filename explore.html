@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter App</title>
+<!-- <link rel="stylesheet" href="styles.css"> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="script.js"></script> -->
+
+</head>
+<body>
+<div class="container">
+  <h1>Counter App</h1>
+  <button id="counterBtn">Klik untuk menghitung</button>
+  <p>Jumlah klik: <span id="clickCount">0</span></p>
+</div>
+<style>
+    .container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#counterBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#clickCount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+</style>
+<script>
+    $(document).ready(function() {
+  var clickCount = 0;
+
+  // Ketika tombol di-klik
+  $('#counterBtn').click(function() {
+    // Tambahkan 1 ke jumlah klik
+    clickCount++;
+    // Perbarui tampilan jumlah klik
+    $('#clickCount').text(clickCount);
+  });
+});
+</script>
+
+
+</body>
+</html>
